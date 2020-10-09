@@ -7,6 +7,7 @@ import SearchParams from "./SearchParams"
 const App = () => {
 
     return (
+
         // <div>
         //     <h1 id="something-important">'Adoped me'</h1>
         //     < Pet name="Luna" animal="dog" breed="pug" />
@@ -18,6 +19,7 @@ const App = () => {
             < SearchParams />
 
         </div>
+
     )
 
 };

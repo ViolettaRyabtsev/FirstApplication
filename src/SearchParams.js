@@ -10,7 +10,7 @@ const SearchParams = () => {
     const [pets, setPets] = useState([])
 
     async function requestPets() {
-        const { animal } = await pet.animals({
+        const { animals } = await pet.animals({
             location,
             breed,
             type: animal
@@ -51,7 +51,7 @@ const SearchParams = () => {
 
                 <button>Submit</button>
             </form>
-
+            {console.log(pets + "!!!!")}
             <Results pets={pets} />
 
         </div>

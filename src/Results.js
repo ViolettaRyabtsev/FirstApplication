@@ -1,8 +1,9 @@
 import React from "react"
-import Pet from "./pet"
+import Pet from "./Pet"
 
 
 const Results = ({ pets }) => {
+    console.log(pets + "here!!")
     return (
 
         <div className='search'>
@@ -25,6 +26,6 @@ const Results = ({ pets }) => {
         </div>
 
     ); //return 
-}; //redults
+}; //results
 
 export default Results;

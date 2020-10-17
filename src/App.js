@@ -1,27 +1,25 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 //import Pet from './pet';
-import SearchParams from "./SearchParams"
+import { Router } from '@reach/router';
+import SearchParams from "./SearchParams";
+import Details from './Details';
 
 // your code 
 const App = () => {
 
     return (
 
-        // <div>
-        //     <h1 id="something-important">'Adoped me'</h1>
-        //     < Pet name="Luna" animal="dog" breed="pug" />
-        //     < Pet name="Bob" animal="fish" breed="yellow" />
-        //     < Pet name="Roman" animal="cat" breed="fat" />
-        // </div>
-        <div>
-            <h1></h1>
-            < SearchParams />
-
-        </div>
-
+        <React.StrictMode>
+            <div>
+                <h1 id="something-important">Adopt Me</h1>
+                <Router>
+                    < SearchParams path="/" />
+                    <Details path="/details/ : id " />
+                </Router>
+            </div>
+        </React.StrictMode>
     )
-
 };
 
 render(<App />, document.getElementById("root"));

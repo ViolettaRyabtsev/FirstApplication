@@ -34,7 +34,6 @@ const SearchParams = () => {
                 requestPets();
             }
 
-
             }>
                 <label htmlFor="location">
                     Location

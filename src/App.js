@@ -7,15 +7,14 @@ import Details from './Details';
 
 // your code 
 const App = () => {
-
     return (
-
         <React.StrictMode>
             <div>
                 <h1 id="something-important">Adopt Me</h1>
                 <Router>
                     < SearchParams path="/" />
-                    <Details path="/details/ : id " />
+                    {/* <SomeOtherRoute path="/details/1" /> */}
+                    <Details path="/details/:id" />
                 </Router>
             </div>
         </React.StrictMode>

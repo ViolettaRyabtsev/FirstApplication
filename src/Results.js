@@ -1,14 +1,11 @@
 import React from "react"
 import Pet from "./Pet"
 
-
 const Results = ({ pets }) => {
     console.log(pets + "here!!")
     return (
-
         <div className='search'>
             {pets.length === 0 ? (<h1>No pets found</h1>) : (
-
                 pets.map(pet => (
                     <Pet
                         animal={pet.type}

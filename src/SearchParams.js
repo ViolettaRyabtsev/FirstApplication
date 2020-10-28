@@ -17,7 +17,6 @@ const SearchParams = () => {
         });
         setPets(animals || []);
     }
-
     useEffect(() => {
         setBreeds([]);
         setBreed(" ")
@@ -44,10 +43,8 @@ const SearchParams = () => {
                         onChange={event => setLocation(event.target.value)}
                     />
                 </label>
-
                 <AnimalDropdown />
                 <BreedDropdown />
-
                 <button>Submit</button>
             </form>
             {console.log(pets + "!!!!")}
